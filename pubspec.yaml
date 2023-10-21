@@ -1,0 +1,34 @@
+name: auralyse
+description: A new Flutter project for detecting emotions in audio.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  archive: ^3.4.6
+  audioplayers: ^5.2.0
+  avatar_glow: ^2.0.2
+  cached_network_image: ^3.3.0
+  envied: ^0.3.0+3
+  flutter:
+    sdk: flutter
+  flutter_sound: ^9.2.13
+  http: ^1.1.0
+  path_provider: ^2.1.1
+  record: ^4.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: "^0.10.0"
+
+flutter:
+  uses-material-design: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
