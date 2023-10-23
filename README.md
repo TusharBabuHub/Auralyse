@@ -7,7 +7,7 @@ To connect to API, the url and the secret key needs to be stored in path ~/lib/a
 Please provide the URL as const String url = <'https://your-url-link-here/predict'>;  
 Please provide the key as const String apiSecretKey = 'your-secret-key-here';  
 
-The API returns a set of images in a zip file, which are the circumplex cxchart of the audio, analysed for each second.  
+The API returns a set of images in a zip file, which are the circumplex chart of the audio, analysed for each second.  
 The application unzips and displays these visulaisations along with play of the audio.  
 
 The User Interface has been kept simple with only one option initially to record audio.  
