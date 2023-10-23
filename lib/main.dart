@@ -73,11 +73,11 @@ class MyAppState extends State<MyApp> {
   }
 
   Future<void> stop() async {
-    await _recorder.stopRecorder();
-    await sendAudio();
     setState(() {
       isRecording = false;
     });
+    await _recorder.stopRecorder();
+    await sendAudio();
   }
 
   Future<void> sendAudio() async {
