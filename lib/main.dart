@@ -65,6 +65,11 @@ class MyAppState extends State<MyApp> {
   }
 
   Future<void> record() async {
+    // Check if a playback is in progress
+    if (_player.isPlaying) {
+      // If a playback is in progress, stop it
+      await _player.stopPlayer();
+    }
     await _recorder.startRecorder(toFile: _path);
     setState(() {
       isRecording = true;
