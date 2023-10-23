@@ -1,2 +1,2 @@
-const String apiSecretKey = '4DNC3TkH_rgL4mr2MXytxUFk7rMfzjoaQNZVwRfLd';
-const String url = 'http://10.0.2.2:5000/predict';
+const String apiSecretKey = '';
+const String url = 'http://localhost:5000/predict';
