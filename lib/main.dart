@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sound/flutter_sound.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 // the following file contains the key and url for Flask API
 import 'auth/secrets.dart';
@@ -65,6 +66,11 @@ class MyAppState extends State<MyApp> {
   }
 
   Future<void> record() async {
+    PermissionStatus status = await Permission.microphone.status;
+    if (status.isDenied) {
+      // We didn't ask for permission yet or the permission has been denied before but not permanently.
+      await Permission.microphone.request().isGranted;
+    }
     // Check if a playback is in progress
     if (_player.isPlaying) {
       // If a playback is in progress, stop it
