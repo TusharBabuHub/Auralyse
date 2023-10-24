@@ -11,4 +11,16 @@ The API returns a set of images in a zip file, which are the circumplex chart of
 The application unzips and displays these visulaisations along with play of the audio.  
 
 The User Interface has been kept simple with only one option initially to record audio.  
-Post analysis, the audio is allowed to be replayed and the visualisation is shown.
+Post analysis, the audio is allowed to be replayed and the visualisation is shown.  
+
+### How to use the Application:
+
+The design of the application has been kept simple.  
+It constitutes of just 2 buttons one to record and other to play.  
+To start with, touch on the Mic icon in the middle of the application.  
+This would commence the recording of audio by the application.  
+The icon would now show an image of Hearing.  
+To stop recording, just touch on the same icon.  
+An Image and a play button along with an image is shown on the screen.  
+Pressing the play icon would replay the audio recorded and would display the emotion for the interval of one second.  
+To start again just press the Mic icon again.
